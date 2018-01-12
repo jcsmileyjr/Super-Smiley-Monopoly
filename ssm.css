@@ -1,0 +1,22 @@
+/*Profile tab in MOBILE VIEW (header) background and text color, border size and color*/
+.profileTabStyleMobileView {
+    background-color: navy;
+    color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+/*create some space between each label in the profile tab*/
+.profileTabStyleMobileView label {
+    margin: -10px 20px 20px 20px;
+}
+/*Profile tab box that displays the player's color*/
+.square {
+    height: 3.6em;
+    width:  3.6em;
+    background-color: lightblue;    
+    position: relative;
+    bottom: -40px;
+}
+
+
