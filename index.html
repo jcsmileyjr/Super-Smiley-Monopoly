@@ -8,36 +8,37 @@
 <script src="libs/bootstrap.min.js"></script>
 <script src="libs/ui-bootstrap-tpls-2.5.0.min.js"></script>
 
+<script src= "libs/angular.min.js"></script>
+<script src="libs/angular-ui-router.min.js"></script>
+<script src="js/app.js"></script><!--link to file containing state, .config, and .run app functions -->  
 <link rel="stylesheet" href="ssm.css">    
 <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css"> 
 <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1" charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=11" />    
 <title>Super "Smiley" Monopoly</title>
 </head>
-<body>
+<body ng-app="SSM">
 <!-- <div class= "hidden-xs hidden-sm col-md-12 col-lg-12"> -->  
 <div class="container-fluid">
-    <!--Profile Tab -->
-    <header class="row profileTabStyleMobileView">        
-        <label class="square"></label>
-        <label>Junior</label>
-        <label>$1150</label>
-        <label>#2 Properties</label>
-        
-    </header>
-    <!--Game Board Tab -->
-    <main id="row gameBoardStyleMobileView">
-        <div id="gameBoard">
-            <div class="specialArea"></div>
-            <div id="property"></div>
-            <div id="property"></div>
+    <div class="row">
+        <!--Mobile View profile tab -->
+        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+            <div ng-include="'profile/profile.html'"></div>
         </div>
         
-    </main>
-    <!--Navigation Tab -->
-    <footer>
-    
-    </footer>
+        <!-- Desktop View Profile and Nav combined-->
+        <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+
+        </div>
+        
+        <!-- Mobile and Desktop View Game Board tab-->
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"></div>
+        
+        <!--Mobile View nav tab -->
+        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg"></div>        
+        
+    </div><!--End of row -->
+
 </div><!--end of container of the row that contains the body -->
 </body>    
 </html>
