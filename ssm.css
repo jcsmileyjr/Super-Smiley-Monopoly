@@ -8,7 +8,9 @@
 
 /*create some space between each label in the profile tab*/
 .profileTabStyleMobileView label {
-    margin: -10px 20px 20px 20px;
+    //margin: -10px 20px 20px 20px;
+    position:           relative;
+    bottom:             -5px;
 }
 
 /*Tips from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_square
@@ -19,11 +21,10 @@ and https://www.w3schools.com/howto/howto_css_shapes.asp*/
     width:              3.6em;
     background-color:   lightblue;    
     position:           relative;
-    bottom:             -40px;
 }
 
 
-#gameBoardStyleMobileView {
+.gameBoardStyleMobileView {
     background-color:   white;
     color:              black;
     border-style:       solid;
@@ -31,30 +32,33 @@ and https://www.w3schools.com/howto/howto_css_shapes.asp*/
     padding: 20px;/*space around the game board*/
 }
 
-#gameBoard {
-    position: relative;
+/*set height of top game board row to 20% of that div*/
+#topRowGameBoardHeight {
+    height: 20%;
 }
 
-/*Tips from: http://cssmenumaker.com/blog/stacking-elements-with-z-index/ */
-/*Square shaped game board's container with an image in the middle */
-/*Because the parent containter, gameboard, is relative and set, these smaller cards can be
-absolute in position*/
-.specialArea {
-    position:   absolute;
-    top:                20px;
-    height:             4em;
-    width:              4em;  
-    background-color: bisque;
+/*set height of middle game board row to 80% of that div*/
+#middleRowGameBoardHeight {
+    height: 60%;
 }
 
-#property {
-    position:   relative;
-    top:                20px;
-    /*left:               55px;*/
-    margin-left:        55px;
-    height:             4em;
-    width:              4em;
-    background-color: lightblue;
+/*set height of bottom game board row to 20% of that div*/
+#bottomRowGameBoardHeight {
+    height: 20%;
 }
+
+.testColor1 {
+    background-color: aqua;
+}
+
+.testColor3 {
+    background-color: blueviolet;
+}
+
+.testColor2 {
+    background-color:firebrick;
+}
+
+
 
 
