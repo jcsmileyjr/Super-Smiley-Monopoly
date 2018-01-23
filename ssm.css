@@ -1,3 +1,5 @@
+
+
 /*Profile tab in MOBILE VIEW (header) background and text color, border size and color*/
 .profileTabStyleMobileView {
     background-color:   navy;
@@ -47,6 +49,12 @@ and https://www.w3schools.com/howto/howto_css_shapes.asp*/
     height: 20%;
 }
 
+#actionArea {
+    border: solid;
+    border-color: navy;
+    height: 100%;
+}
+
 .testColor1 {
     background-color: aqua;
 }
@@ -59,6 +67,74 @@ and https://www.w3schools.com/howto/howto_css_shapes.asp*/
     background-color:firebrick;
 }
 
+.streetHorizontal {    
+    height: 20%;
+    display: block;
+    padding:0; margin:0;
+}
+
+.ownerBoxHorizontal {
+    height: 20%;
+    display: block;
+    background-color: grey;
+    padding:0; margin:0;
+}
+
+.streetVertical {    
+    height: 30px;
+
+}
+
+.ownerBoxVertical {
+    height: 50px;
+    background-color: grey;
+
+}
+
+.auntStreet {
+    background-color: darkcyan;
+    height: 50px;
+}
+
+.cardBorder {
+    border: solid;
+}
+
+.rotateLeftSideGameBoardPropetyTitle {
+        transform: rotate(90deg);/*tip from https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotate*/
+}
+
+.rotateRightSideGameBoardPropetyTitle {
+        transform: rotate(-90deg);/*tip from https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotate*/
+}
+
+
+/*xs size mobile*/
+@media only screen and (max-width: 500px) {
+    .streetBoxVerticalLeftSide {
+        float: right;
+    }
+    
+    .paddingLeftSideGameBoardPropetyTitle {
+        padding-right: 25px;
+    }
+    
+    .streetBoxVerticalRightSide {
+        float: left;
+    }
+    
+    .paddingRightSideGameBoardPropetyTitle {
+        padding-right: 35px;
+        
+    }    
+}
+
+/*sm to larger*/
+@media screen and (min-width: 500px) {    
+    .paddingLeftSideGameBoardPropetyTitle {
+        padding-left: 15px;
+    }
+}
 
 
 
