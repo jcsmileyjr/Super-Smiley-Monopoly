@@ -126,7 +126,11 @@ and https://www.w3schools.com/howto/howto_css_shapes.asp*/
     .paddingRightSideGameBoardPropetyTitle {
         padding-right: 35px;
         
-    }    
+    }
+    
+    .titlePositionHorizontal {
+        margin-left: -10px;;
+    }
 }
 
 /*sm to larger*/
